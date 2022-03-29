@@ -1,0 +1,8 @@
+<section class="cls-section">
+    <app-timer-screen1 class="cls-section-comps" [timeLeft]="timer"></app-timer-screen1>
+    <app-timer-screen2 class="cls-section-comps" (startTimer$)="start($event)" (resetEvent$)="reset()" (pauseEvent$)="pause()" (startEvent$)="incStart()"></app-timer-screen2>
+    <app-timer-screen3 class="cls-section-comps" [logs] = 'logs'></app-timer-screen3>
+    <app-timer-screen4 class="cls-section-comps" [noOfStarts]="noOfStarts" [noOfPauses]="noOfPauses"></app-timer-screen4>
+</section> 
+
+

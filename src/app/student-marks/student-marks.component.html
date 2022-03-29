@@ -1,0 +1,32 @@
+<table class="table" scrollHeight="calc(100vh - 170px)">
+    <tr>
+      <th class="tableHeader" *ngFor="let col of tableHeaders"  (click)="sortFunction(col)">
+        {{ col }}
+      </th>
+    </tr>
+    <!-- <tr *ngFor="let item of studentData">
+      <td>
+        <span class="normalColoumn"> {{ item.name }}</span>
+      </td>
+      <td>
+        <span class="normalColoumn"> {{ item.class }}</span>
+      </td>
+      <td>
+        <span class="normalColoumn"> {{ item.section }}</span>
+      </td>
+      <td>
+        <span class="normalColoumn"> {{ item.sub1 }}</span>
+      </td>
+      <td>
+        <span class="normalColoumn"> {{ item.sub2 }}</span>
+      </td>
+      <td>
+        <span class="normalColoumn"> {{ item.sub3 }}</span>
+      </td>
+    </tr> -->
+    <tr class="table-row" *ngFor="let item of studentData">
+        <td class="table-cell" *ngFor="let col of tableHeaders">
+            {{item[col]}}
+        </td>
+    </tr>
+  </table>

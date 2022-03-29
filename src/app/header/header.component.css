@@ -1,0 +1,23 @@
+.cls-header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: rgba(219, 206, 206, 0.788);
+    justify-content: space-between;
+      align-items: center;
+  }
+  .cls-section-header {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .cls-section-header div {
+    margin: 10px;
+  }
+  .cls-section-header div:hover{
+    cursor: pointer;
+  }
+  .btn-option{
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }

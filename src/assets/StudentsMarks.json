@@ -1,0 +1,52 @@
+{
+    "studentData": [
+        {
+            "name": "Student 1",
+            "class": "3",
+            "section": "A",
+            "sub1": "23",
+            "sub2": "54",
+            "sub3": "65"
+        },
+        {
+            "name": "Student 2",
+            "class": "3",
+            "section": "B",
+            "sub1": "23",
+            "sub2": "45",
+            "sub3": "67"
+        },
+        {
+            "name": "Student 3",
+            "class": "3",
+            "section": "C",
+            "sub1": "26",
+            "sub2": "34",
+            "sub3": "45"
+        },
+        {
+            "name": "Student 4",
+            "class": "3",
+            "section": "A",
+            "sub1": "34",
+            "sub2": "34",
+            "sub3": "75"
+        },
+        {
+            "name": "Student 5",
+            "class": "3",
+            "section": "C",
+            "sub1": "50",
+            "sub2": "33",
+            "sub3": "56"
+        },
+        {
+            "name": "Student 6",
+            "class": "3",
+            "section": "A",
+            "sub1": "88",
+            "sub2": "78",
+            "sub3": "90"
+        }
+    ]
+}

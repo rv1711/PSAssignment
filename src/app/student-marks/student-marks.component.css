@@ -1,0 +1,25 @@
+.table{
+    border: 5px solid pink;
+    margin: 10px;
+}
+.tableHeader{
+    border: 3px dashed blue;
+    background-color: black;
+    color: aliceblue;
+    font-size: large;
+    padding: 5px;
+}
+.tableHeader:hover{
+    cursor: pointer;
+}
+.table-row{
+    
+    border: 3px solid yellowgreen;
+    background-color: gainsboro;
+    color: blueviolet;
+}
+
+.table-cell{
+    font-size: medium;
+    padding: 5px;
+}

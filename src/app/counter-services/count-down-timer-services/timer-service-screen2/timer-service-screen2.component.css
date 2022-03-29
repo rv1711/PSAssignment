@@ -1,0 +1,6 @@
+.cls-section{
+    display: block;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}

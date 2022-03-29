@@ -1,0 +1,10 @@
+<div (scroll)="scrollEvent($event)">
+    <div class="divContainer" *ngFor="let div of divs; let i=index;">
+        <button class="cls-button" (click) = "showAlert(i)">
+            Click me
+        </button>
+    </div>
+    <button class="cls-button" (click) = "addDivs()">
+        Add
+    </button>
+</div>

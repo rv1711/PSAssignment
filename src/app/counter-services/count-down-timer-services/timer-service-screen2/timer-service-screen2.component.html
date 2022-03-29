@@ -1,0 +1,18 @@
+<section class="cls-section">
+    <form [formGroup]="formInputTimer">
+        <label for="inputTimer">Enter Time Limit <input type="number" id="inputTimer"
+                formControlName="inputTimer"></label>
+        <button *ngIf="pause" (click)="start()">
+            Start
+        </button>
+        <button *ngIf="!pause" (click)="pauseTimer()">
+            Pause
+        </button>
+        <button (click)="reset()">
+            Reset
+        </button>
+    </form>
+    <ul>
+        <li *ngFor="let internalPauseLog of internalPauseLogs">{{internalPauseLog}}</li>
+    </ul>
+</section>
