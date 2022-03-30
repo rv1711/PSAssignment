@@ -1,1 +1,27 @@
-<p>shopping-app works!</p>
+<section class="cls-topSection">
+    <section>
+        <button class="btn" [ngClass]="{'active': !gridView}" (click)="gridView=false;"><i class="fa fa-bars"></i> List</button>
+        <button class="btn" [ngClass]="{'active': gridView}" (click)="gridView=true;"><i class="fa fa-th-large"></i> Grid</button>
+    </section>
+    <section>
+         <ng-select
+                    [items]="priceFilters"
+                   bindLabel="display"
+                   bindValue="id"
+                   placeholder="Price filter"
+                   [(ngModel)]="selectedPriceFilter"
+                   (ngModelChange)="onChange($event)">
+    </ng-select>
+</section>
+</section>
+<section>
+    <div *ngIf="products.length === 0">
+        No Product found
+    </div>
+    <div class="row">
+        <div class="cls-products" [ngClass]="{'cls-product-grid': gridView}" *ngFor="let product of products">
+            <h3>{{product.productName}}</h3>
+            <strong>Rs. {{product.productPrice}}</strong>
+        </div>
+    </div>
+</section>
